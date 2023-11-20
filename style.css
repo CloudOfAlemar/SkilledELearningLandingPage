@@ -1,0 +1,382 @@
+
+:root {
+  --grayish-blue: hsl( 234, 25%, 52% );
+  --dark-blue: hsl( 233, 54%, 16% );
+  --gray: hsl( 232, 10%, 56% );
+  --pink: hsl( 341, 92%, 62% );
+  --light-pink: hsl( 341, 100%, 83% );
+  --white: hsl( 0, 0%, 100% );
+  /* 
+    Gradient Colors:
+    Orange to Pink - hsl( 322, 87%, 55% ) hsl( 13, 100%, 64% )
+    Blue to Pink - hsl( 237, 100%, 64% ) hsl( 322, 87%, 55% )
+  */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: .625rem;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+h1,
+h2 {
+  color: var( --dark-blue );
+}
+
+p {
+  font-size: 1.6rem;
+  color: var( --gray );
+  line-height: 2.6rem;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+/* =================================================== */
+/* Broad Classes */
+/* =================================================== */
+
+.header,
+.main,
+.footer {
+  max-width: 1440px;
+  margin: auto;
+}
+
+.container {
+  padding: 0 1.6rem;
+  max-width: 1110px;
+  margin: auto;
+}
+
+.banner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.banner .logo {
+  align-self: center;
+}
+
+.cta-button {
+  font-size: 1.6rem;
+  padding: 1.6rem 2.5rem;
+  border-radius: 100px;
+  text-align: center;
+  color: var( --white );
+}
+
+/* =================================================== */
+/* Header */
+/* =================================================== */
+
+.header .container {
+  padding-top: 1.6rem;
+}
+
+.header .banner {
+  margin-bottom: 3.8rem;
+}
+
+.header .banner .cta-button {
+  background-color: var( --dark-blue );
+}
+
+.header .banner .cta-button:hover {
+  background-color: var( --grayish-blue );
+}
+
+.hero-area {
+  max-width: 398px;
+}
+
+.hero-area h1 {
+  font-size: 4rem;
+  font-weight: 800;
+  margin-bottom: 2.6rem;
+  line-height: 5.1rem;
+}
+
+.hero-area p {
+  margin-bottom: 2.4rem;
+}
+
+.hero-area .cta-button {
+  background: linear-gradient(
+    hsl( 13, 100%, 64% ),
+    hsl( 322, 87%, 55% )
+  );
+}
+
+.hero-area .cta-button:hover {
+  opacity: .5;
+}
+
+.hero-image-tablet {
+  display: none;
+}
+
+.hero-image-desktop {
+  display: none;
+}
+
+/* =================================================== */
+/* Main */
+/* =================================================== */
+
+.main {
+  background: linear-gradient(
+    hsl( 0, 0%, 100% ),
+    hsl( 234, 100%, 97% )
+  );
+  padding-top: 6rem;
+}
+
+.hero-image-mobile {
+  display: block;
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+}
+
+.courses-area {
+  padding-bottom: 4.4rem;
+}
+
+.course-box {
+  border-radius: 10px;
+  margin-top: 4.4rem;
+  padding: 0rem 2.8rem 3.2rem;
+  background-color: var( --white );
+}
+
+.cta-course-box {
+  padding: 2.8rem;
+  margin-top: 0;
+  background: linear-gradient(
+    hsl( 13, 100%, 64% ),
+    hsl( 322, 87%, 55% )
+  );
+}
+
+.course-box img {
+  position: relative;
+  transform: translateY( -50% );
+}
+
+.course-box h2 {
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 2.5rem;
+  margin-bottom: 1.6rem;
+}
+
+.cta-course-box h2 {
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+  color: var( --white );
+  margin-bottom: 0;
+}
+
+.course-box p {
+  margin-bottom: 2.4rem;
+}
+
+.course-box a {
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 2.8rem;
+  color: var( --pink );
+}
+
+.course-box a:hover {
+  color: var( --light-pink );
+}
+
+/* =================================================== */
+/* Footer */
+/* =================================================== */
+
+.footer {
+  padding: 3.6rem 0;
+  background-color: var( --dark-blue );
+  margin-bottom: 5rem;
+}
+
+.footer .container {
+  padding: 0 1.6rem;
+}
+
+.footer .cta-button {
+  background: linear-gradient(
+    hsl( 237, 100%, 64% ),
+    hsl( 322, 87%, 55% )
+  );
+}
+
+.footer .cta-button:hover {
+  background: linear-gradient(
+    hsl( 237, 100%, 77% ),
+    hsl( 322, 87%, 67% )
+  );
+}
+
+.attribution { 
+  font-size: 11px; text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 3rem;
+}
+
+.attribution a { 
+  color: hsl(228, 45%, 44%); 
+}
+
+@media screen and ( min-width: 768px ) {
+
+
+  .container {
+    padding: 0 3.9rem;
+  }
+
+  .header {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 22rem;
+  }
+
+  .header .container {
+    padding-top: 2.4rem;
+  }
+
+  .hero-image-tablet {
+    display: block;
+    position: absolute;
+    top: -15%;
+    left: 48%;
+    z-index: -1;
+  }
+
+  .hero-image-mobile {
+    display: none;
+  }
+
+  .courses-area {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 700px;
+    margin: auto;
+  }
+
+  .course-box {
+    width: 340px;
+    height: 260px;
+  }
+
+  .cta-course-box {
+    padding-top: 6rem;
+    align-self: flex-end;
+  }
+
+  .footer .container {
+    padding: 0 3.9rem;
+  }
+}
+
+@media screen and ( min-width: 1140px ) {
+
+  .cta-button {
+    font-size: 1.8rem;
+  }
+
+  .container {
+    padding: 0;
+  }
+
+  .header .banner {
+    margin-bottom: 17.8rem;
+  }
+
+  .hero-area {
+    max-width: 457px;
+  }
+
+  .hero-area h1 {
+    font-size: 5.6rem;
+    line-height: 70px;
+    margin-bottom: 2.9rem;
+  }
+
+  .hero-area p {
+    font-size: 1.8rem;
+    line-height: 28px;
+    max-width: 445px;
+    margin-bottom: 4rem;
+  }
+
+  .hero-image-tablet {
+    display: none;
+  }
+
+  .hero-image-desktop {
+    display: block;
+    position: absolute;
+    width: 991px;
+    top: -13%;
+    left: 50%;
+    z-index: -1;
+  }  
+
+  .courses-area {
+    max-width: 1110px;
+    padding-bottom: 10rem;
+  }
+
+  .course-box {
+    width: 350px;
+    height: 322px;
+    position: relative;
+    padding: 0 3.2rem 3.2rem;
+  }
+
+  .cta-course-box {
+    padding-top: 6rem;
+  }
+
+  .cta-course-box h2 {
+    font-size: 3.2rem;
+    line-height: 40px;
+  }
+
+  .course-box h2 {
+    font-size: 2.4rem;
+    line-height: 28px;
+    margin-bottom: 2.4rem;
+  }
+
+  .course-box p {
+    font-size: 1.8rem;
+    line-height: 28px;
+  }
+
+  .course-box a {
+    position: absolute;
+    bottom: 0;
+    transform: translateY( -4rem );
+  }
+
+}
+
+@media screen and ( min-width: 1440px ) {
+  .hero-image-desktop {
+    left: 54%;
+  }
+}
