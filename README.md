@@ -23,8 +23,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution Link](https://your-solution-url.com)
-- Live Site URL: [Live Site Link](https://your-live-site-url.com)
+- Solution URL: [Solution Link](https://www.frontendmentor.io/solutions/skilled-elearning-landing-page-18VaBDaPsw)
+- Live Site URL: [Live Site Link](https://cloudofalemar.github.io/SkilledELearningLandingPage/)
 
 ## My process
 
